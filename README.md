@@ -1,58 +1,36 @@
-# Writing good how-to or tutorial
+# MELSEC connector application example
 
-Before you start writing, read the following materials how to write good documentation (including how-tos).
-
-* [Google Developer style guide](https://developers.google.com/style)
-* [Technical writing Courses](https://developers.google.com/tech-writing)
-* [Microsoft Writing Style Guide](https://docs.microsoft.com/cs-cz/style-guide/welcome/)
-
-Then decide: Are you writing a tutorial or a how-to guide?
-
-[Divio](https://documentation.divio.com/) explains the difference  (Note that this applies for software documentation for application developers)
-
-* Tutorials are lessons that take the reader by the hand through a series of steps to complete a project of some kind. They are what your project needs in order to show a beginner that they can achieve something with it. https://documentation.divio.com/tutorials/
-* How-to guides take the reader through the steps required to solve a real-world problem
-
-Each have a different writing style. Tutorials must be bullet proof (no unexpected behavior) https://documentation.divio.com/how-to-guides/
-
-Note: Try to write the tutorials and how-tos as a standalone html page, ready to be generated using Static site generator [MkDocs](https://www.mkdocs.org/). When referencing code examples or files, use the full URL of the git repository. We want to reuse these how-tos and tutorials in Documentation website.
-
-Don't explain concepts. [It gets in a way of action](https://documentation.divio.com/how-to-guides/#don-t-explain-concepts).  
-
-Don't use HTML tags unless working with videos. And try to avoid using videos unless absolutely necessary. Don't upload videos to Git repository.
-
-Bellow you can find the structure of IE tow-to/tutorial
-
-- [Writing good how-to or tutorial](#writing-good-how-to-or-tutorial)
+- [MELSEC connector application example](#melsec-connector-application-example)
   - [Description](#description)
     - [Overview](#overview)
-    - [General Task](#general-task)
+    - [General task](#general-task)
   - [Requirements](#requirements)
     - [Prerequisites](#prerequisites)
     - [Used components](#used-components)
-  - [Installation](#installation)
+    - [PLC project](#plc-project)
+  - [Configuration](#configuration)
   - [Usage](#usage)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
-  - [License and Legal Information](#license-and-legal-information)
-  - [Disclaimer](#disclaimer)
+  - [Licence and Legal Information](#licence-and-legal-information)
     
 ## Description
 
 ### Overview
 
-Why has been this how-to/tutorial created? What is the purpose?
+This tutorial shows how to use the Industrial Edge applications MELSEC Connector to establish a connection between an Industrial Edge Device (IED) and a 3rd party PLC that supports **MELSEC**. These PLC variants are supported:
+
+* Mithsubhusi FX5U
+* Mithsubhusi L02
+* Mithsubhusi Q00U
+* Mithsubhusi FX3U
+
+The MELSEC Connector is an application that runs on the individual IED. Connections can be configured using the Common Configurator for industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
+
 
 ### General Task
 
-What is the general goal/task of this how-to/tutorial?
-
-![task](docs/graphics/how-to-architecture-template.png)
-
-PowerPoint template for architecture picture [download here](https://siemens.sharepoint.com/:p:/r/teams/EdgeTeam-Discussion/Shared%20Documents/Quality%20Gate%20HQ/Quality%20Gate%20EU/23_GitHub_HowTos/Architecture_Template.pptx?d=w05e1ff84a07149cdb4659cc2f9211bbd&csf=1&web=1&e=p8QbsN).
-
-Save created architecture PowerPoint slides as separate file [here](https://siemens.sharepoint.com/teams/EdgeTeam-Discussion/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fteams%2FEdgeTeam%2DDiscussion%2FShared%20Documents%2FQuality%20Gate%20HQ%2FQuality%20Gate%20EU%2F23%5FGitHub%5FHowTos&FolderCTID=0x012000002421829443F54BAB033C81F598C9AD) for later updates and use.
-
+Here we configure a connection to a Mithsubhusi FX5U PLC using the Connector for MELSEC. The data is published on the Databus. By using the application Flow Creator, we fetch the metadata of the MELSEC Connector, write some data on the configured tags and the read out the new data.
 ## Requirements
 
 ### Prerequisites
