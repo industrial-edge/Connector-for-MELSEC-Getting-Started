@@ -82,7 +82,7 @@ You can find further information about the following steps in the [Configuration
 
 ## Usage
 
-As soon as the FINS TCP Connector is configured, data can be transfered.
+As soon as the MELSEC Connector is configured, data can be transfered.
 
 You can find further information about how to handle the data via the Flow Creator in the [Usage](/docs/Usage.md) documentation:
 
