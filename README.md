@@ -79,3 +79,37 @@ You can find further information about the following steps in the [Configuration
 - [Configure Databus](/docs/Installation.md#configure-databus)
 - [Configure MELSEC via Common Configurator](/docs/Installation.md#configure-melsec-via-common-configurator)
 
+
+## Usage
+
+As soon as the FINS TCP Connector is configured, data can be transfered.
+
+You can find further information about how to handle the data via the Flow Creator in the [Usage](/docs/Usage.md) documentation:
+
+* [Read metadata](/docs/Usage.md#read-metadata)
+* [Write data](/docs/Usage.md#write-data)
+* [Read data](/docs/Usage.md#read-data)
+* [Use IIH essentials](/docs/Usage.md#use-IIH-essentials)
+
+
+## Documentation
+
+You can find further documentation and help in the following links
+
+- [Industrial Edge Hub](https://iehub.eu1.edge.siemens.cloud/#/documentation)
+- [Industrial Edge Forum](https://www.siemens.com/industrial-edge-forum)
+- [Industrial Edge landing page](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge/simatic-edge.html)
+- [Industrial Edge GitHub page](https://github.com/industrial-edge)
+
+
+## Contribution
+
+Thank you for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section.
+Additionally everybody is free to propose any changes to this repository using Pull Requests.
+
+If you haven't previously signed the [Siemens Contributor License Agreement](https://cla-assistant.io/industrial-edge/) (CLA), the system will automatically prompt you to do so when you submit your Pull Request. This can be conveniently done through the CLA Assistant's online platform. Once the CLA is signed, your Pull Request will automatically be cleared and made ready for merging if all other test stages succeed.
+
+## License and Legal Information
+
+Please read the [Legal information](LICENSE.txt).
+
