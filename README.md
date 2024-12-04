@@ -39,21 +39,32 @@ Here we configure a connection to a Mithsubhusi FX5U PLC using the Connector for
 
 ### Prerequisites
 
-What are the requirements on the user knowledge, HW components before starting the how-to?
+- Access to an industrial Edge Managment (IEM) with onboarded Industrial Edge Device (IED)
+- IEM: Installed system configurator for Databus
+- IED: Installed system app Databus
+- IED: Installed app Connector for Melsec
+- IED: Installed app Common Configurator
+- IED: Installed app Registry Service
+- IED: Installed app Common Import Converter
+- IED: Installed app IIH Semantics
+- IED: Installed app Flow Creator
+- IED: Installed app IIH Essentials (optional)
+- IED is connected to the Mithsubhusi FX5U PLC via Ethernet
+- GX Works2 project loaded on PLC
+- Google Chrome (Version ≥ 72)
 
 ### Used components
 
-List the used software and hardware components that were tested with this how-to.
-Add the used components here (e.g.)
-
-* Industrial Edge App Publisher V1.0.8
-* Docker Engine 18.09.6
-* Docker Compose V2.4
-* S7 Connector V 1.0.22
-* S7 Connector Configurator V 1.0.9
-* Industrial Edge Device V 1.0.0-34
-* TIA Portal V16
-* PLC: CPU 1511 FW 2.8.3
+- Industrial Edge Management (IEMV) V2.4.0-11
+- Industrial Edge Device (OS) V2.3.0-13
+  - Databus V3.0.1
+  - Common Configurator V2.0.1
+  - Registry Service V1.11.0-2
+  - Connector for MELSEC V1.0.0-0
+  - Flow Creator V1.17.1-1
+  - IIH Essentials V2.0.1
+- PLC: Mithsubhusi FX5U
+- GX Works2
 
 ## Installation
 
