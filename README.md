@@ -66,6 +66,19 @@ Here we configure a connection to a Mithsubhusi FX5U PLC using the Connector for
 - PLC: Mithsubhusi FX5U
 - GX Works2
 
+### PLC project
+
+The used PLC project *Melsectest.gx3* can be found in the [src folder](/src/).
+
+## Configuration
+
+You can find further information about the following steps in the [Configuration](/docs/Installation.md) documentation:
+
+- [Overview](/docs/Installation.md#overview)
+- [Install MELSEC Connector](/docs/Installation.md#install-melsec-connector)
+- [Configure Databus](/docs/Installation.md#configure-databus)
+- [Configure MELSEC via Common Configurator](/docs/Installation.md#configure-melsec-via-common-configurator)
+
 ## Installation
 
 How to install/run this application example? (i.e. how to deploy it to Industrial Edge device?) How to build this application? How to set up configurations in IE?
