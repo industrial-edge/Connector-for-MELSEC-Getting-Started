@@ -63,7 +63,7 @@ With the Common Configurator, you can configure several connectors and publish t
 
  ![IIH_Settings](/docs/graphics/Databuscc.PNG)
 
-As soon as the MELSEC Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure an MELSEC connection to a Mitsubishi FX5U PLC. To configure the MELSEC Connector, proceed as following:
+As soon as the MELSEC Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure an MELSEC connection to a Mitsubishi IQR PLC. To configure the MELSEC Connector, proceed as following:
 
 - go to the tab 'Get data' and select tab 'Connector Configuration'
 - select the MELSEC Connector
