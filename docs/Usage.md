@@ -16,7 +16,7 @@ To print out the MELSEC Connector metadata, follow these steps:
 
 - create a mqtt in node
 - set the server to 'ie-databus' with port 1883 and corresponding user name/password ('edge'/'edge')
-- set the topic to `ie/m/j/simatic/v1/melsec1/dp`
+- set the topic to `ie/m/j/simatic/v1/melsec1/dp/r`
 - create a debug node and connect to the mqtt in node
 - deploy the flow and watch the debug window
 
