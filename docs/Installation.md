@@ -68,38 +68,38 @@ As soon as the MELSEC Connector is installed and started on the same IED as the 
 - go to the tab 'Get data' and select tab 'Connector Configuration'
 - select the MELSEC Connector
 
-   ![Cchome](/docs/graphics/Connectoroverview.PNG)
+   ![Cchome](/docs/graphics/Getdataoverview.PNG)
 
 - switch to tab 'Tags'
 - choose 'Add data source'
 
-  ![Ccdatasources](/docs/graphics/ConnectorAdd.PNG)
+  ![Ccdatasources](/docs/graphics/Adddatasource.PNG)
 
 - configure the PLC accordingly and save
 
-  ![Source](/docs/graphics/CCadddatasource.PNG) 
+  ![Source](/docs/graphics/Datasourceadded.PNG) 
 
 - under tab 'Tag' of the newly created PLC, choose 'Add tag'
 
- ![Source](/docs/graphics/Ccaddtag.PNG)
+ ![Source](/docs/graphics/Addtag.PNG)
 
   
 - configure a tag as needed and save
 
- ![Tags](/docs/graphics/Countertag.PNG)
+ ![Tags](/docs/graphics/Addedtags.PNG)
 
-- Add these two tags that mentioned bellow and select the newly created Datasource 'FX5U'
+- Add these two tags that mentioned bellow and select the newly created Datasource 'IQR'
 
-  - INT
-  - DINT
+  - Data_INT
+  - Data_WORD
 
 - For writing the tag values onto the MQTT databus you need to activate and confirm the 'Publish on the databus' option for each tag. And click Deploy
 
- ![Deploydatabus](/docs/graphics/Deploydatabus.PNG)
+ ![Deploydatabus](/docs/graphics/Deploy.PNG)
 
 - back on the overview page 'Available connectors', the status of the MELSEC Connector should be shown as **connected**
 
- ![IIHoverview](/docs/graphics/IIHoverview.PNG)
+ ![IIHoverview](/docs/graphics/overviewcc.PNG)
 
 Now data can be transferred via the MELSEC connection. Please find more information in the  [Usage](/docs/Usage.md) documentation.
 
