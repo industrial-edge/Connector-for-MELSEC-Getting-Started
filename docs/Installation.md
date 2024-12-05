@@ -61,7 +61,7 @@ With the Common Configurator, you can configure several connectors and publish t
 - in the Common Configurator settings under the tab 'Data Subscriber settings' enter the databus user name and password ('edge'/'edge')
 - Save the settings
 
- ![IIH_Settings](/docs/graphics/Databusconfigcc.PNG)
+ ![IIH_Settings](/docs/graphics/Databuscc.PNG)
 
 As soon as the MELSEC Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure an MELSEC connection to a Mitsubishi FX5U PLC. To configure the MELSEC Connector, proceed as following:
 
