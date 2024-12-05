@@ -1,82 +1,73 @@
-# Installation
+# Configuration
 
-- [Installation](#installation)
-  - [Build application](#build-application)
-    - [Cloning image](#cloning-image)
-    - [Build docker image](#build-docker-image)
-  - [Upload  App to the Industrial Edge Managment](#upload--app-to-the-industrial-edge-managment)
-    - [Connect your Industrial Edge App Publisher](#connect-your-industrial-edge-app-publisher)
-    - [Upload  App using the Industrial Edge App Publisher](#upload--app-using-the-industrial-edge-app-publisher)
-  - [Deploying of App](#deploying-of-app)
-    - [Configuring application](#configuring-application)
-    - [Add additional installation steps here, if required](#add-additional-installation-steps-here-if-required)
-      - [Additional steps](#additional-steps)
+- [Configuration](#configuration)
+  - [Overview](#overview)
+  - [Install MELSEC Connector](#install-melsec-connector)
+  - [Configure Databus](#configure-Databus)
+  - [Configure MELSEC Connector via Common Configurator](#configure-MELSEC-via-Common-Configurator)
+
+## Overview
+
+When working with connectors on Industrial Edge, the **Databus** app is required to exchange the data via MQTT. The configuration of the connectors is done via the **Common Configurator** app. Therefore also the **IIH Registry Service** app is necessary, to find installed connectors on an Industrial Edge Device.
+
+Make sure the following apps are installed and running on the Industrial Edge Device (IED):
+- Databus
+- Common Configurator
+- IIH Registry Service
+
+
+## Install MELSEC Connector
+
+The MELSEC Connector app must be available in your IEM catalog. Proceed the following steps to install the app on your IED:
+
+- open the catalog in the IEM
+- select the MELSEC Connector
+- click 'Install'
+- in the tab 'Configurations' click 'Next'
+- in the tab 'Devices' choose your IED
+- click 'Install Now'
+- click 'Install' to allow the installation
+
+![app](/docs/graphics/FinsTCPcatalog.PNG)
+
+## Configure Databus
+
+The system app Databus is essential to exchange data between a PLC and the IED. The MELSEC Connector sends the transfered data to the Databus on the IED. From there the data can be used for further processing.
+
+You need to create a user and one or more topics in the Databus configuration, which cover the MELSEC data:
+
+- ***ie/m/j/simatic/v1/melsec1/dp*** for MELSEC metadata
+- ***ie/d/j/simatic/v1/melsec1/dp/#*** for MELSEC data
+
+Therefore follow these steps:
+
+- open the Industrial Edge Management (IEM)
+- go to 'Data Connections' > Databus
+- select the corresponding IED
+- create the topic `ie/#`and a dedicated user with username and password ('edge'/'edge'), set permissions to 'Publish and Subscribe'
+- deploy the configuration and wait for the job to be finished successfully
   
-## Build application
+![databus](/docs/graphics/Databusconfig.PNG)
 
-### Cloning image
+## Configure MELSEC via Common Configurator
 
-- Clone or Download the source code to your engineering VM
+With the Common Configurator, you can configure several connectors and publish the data to the Databus. Therefore, you must enter the Databus credentials within the Common Configurator:
 
-### Build docker image
+- open the IED web interface
+- open the app Common Configurator
+- go to the tab 'Settings' and select the menu 'Databus credentials'
+- in the Common Configurator settings enter the databus service name: 'ie-databus:1883'
+- in the Common Configurator settings under the tab 'Data Publisher settings' enter the databus user name and password ('edge'/'edge')
+- in the Common Configurator settings under the tab 'Data Subscriber settings' enter the databus user name and password ('edge'/'edge')
+- Save the settings
 
-Add instruction how to build your application, e.g.:
+ ![IIH_Settings](/docs/graphics/Databusconfigcc.PNG)
 
-- Open console in the source code folder
-- Rename the example Dockerfile (Dockerfile.example) to 'Dockerfile'
-- Use command `docker-compose build` to create the docker image.
-- This docker image can now be used to build you app with the Industrial Edge App Publisher
-- *docker images | grep scannerapp* can be used to check for the images
-- You should get a result similiar to this:
+As soon as the MELSEC Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure an MELSEC connection to a Mitsubishi FX5U PLC. To configure the Fins TCP Connector, proceed as following:
 
-## Upload  App to the Industrial Edge Managment
+- go to the tab 'Get data' and select tab 'Connector Configuration'
+- select the MELSEC Connector
 
-Please find below a short description how to publish your application in your IEM.
+   ![Cchome](/docs/graphics/Connectoroverview.PNG) 
 
-For more detailed information please see the section for [uploading apps to the IEM](https://github.com/industrial-edge/upload-app-to-iem).
 
-### Connect your Industrial Edge App Publisher
-
-- Connect your Industrial Edge App Publisher to your docker engine
-- Connect your Industrial Edge App Publisher to your Industrial Edge Managment System
-
-### Upload  App using the Industrial Edge App Publisher
-
-- Create a new application using the Industrial Publisher
-- Add a app new version
-- Import the [docker-compose](../docker-compose.yml) file using the **Import YAML** button
-- The warning `Build (sevices >> scanner-service) is not supported` can be ignored
-- **Start Upload** to transfer the app to Industrial Edge Managment
-- Further information about using the Industrial Edge App Publisher can be found in the [IE Hub](https://iehub.eu1.edge.siemens.cloud/documents/appPublisher/en/start.html)
-
-## Deploying of App
-
-### Configuring application
-
-If your app needs additional configuration you can add further description here, e.g. [param.json](../cfg-data/param.json)
-
-```json
-{
-    "Parameter1": "Siemens AG",
-    "Parameter2": "edge",
-    "Parameter3": "edge"
-}
-```
-
-Add description of the configuration here:
-
-### Add additional installation steps here, if required
-
-#### Additional steps
-
-- Add description here
-- Add screenshots here
-
-For having uniform screenshots it is recommended to use the Tool Snagit with the following settings
-- Image:
-- Effects: Border
-- Color: #000000 (black)
-- Width: 1
-
-![](graphics/snagit-settings1.png)
-![](graphics/snagit-settings2.png)
