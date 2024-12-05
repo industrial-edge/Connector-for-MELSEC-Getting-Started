@@ -28,7 +28,7 @@ The MELSEC Connector app must be available in your IEM catalog. Proceed the foll
 - click 'Install Now'
 - click 'Install' to allow the installation
 
-![app](/docs/graphics/FinsTCPcatalog.PNG)
+![app](/docs/graphics/Melsecmanagment.PNG)
 
 ## Configure Databus
 
@@ -47,7 +47,7 @@ Therefore follow these steps:
 - create the topic `ie/#`and a dedicated user with username and password ('edge'/'edge'), set permissions to 'Publish and Subscribe'
 - deploy the configuration and wait for the job to be finished successfully
   
-![databus](/docs/graphics/Databusconfig.PNG)
+![databus](/docs/graphics/DatabusIEM.PNG)
 
 ## Configure MELSEC via Common Configurator
 
