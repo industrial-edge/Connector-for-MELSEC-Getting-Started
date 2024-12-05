@@ -63,11 +63,43 @@ With the Common Configurator, you can configure several connectors and publish t
 
  ![IIH_Settings](/docs/graphics/Databusconfigcc.PNG)
 
-As soon as the MELSEC Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure an MELSEC connection to a Mitsubishi FX5U PLC. To configure the Fins TCP Connector, proceed as following:
+As soon as the MELSEC Connector is installed and started on the same IED as the Common Configurator, the connector is visible within the configurator. In this example we want to configure an MELSEC connection to a Mitsubishi FX5U PLC. To configure the MELSEC Connector, proceed as following:
 
 - go to the tab 'Get data' and select tab 'Connector Configuration'
 - select the MELSEC Connector
 
-   ![Cchome](/docs/graphics/Connectoroverview.PNG) 
+   ![Cchome](/docs/graphics/Connectoroverview.PNG)
 
+- switch to tab 'Tags'
+- choose 'Add data source'
+
+  ![Ccdatasources](/docs/graphics/ConnectorAdd.PNG)
+
+- configure the PLC accordingly and save
+
+  ![Source](/docs/graphics/CCadddatasource.PNG) 
+
+- under tab 'Tag' of the newly created PLC, choose 'Add tag'
+
+ ![Source](/docs/graphics/Ccaddtag.PNG)
+
+  
+- configure a tag as needed and save
+
+ ![Tags](/docs/graphics/Countertag.PNG)
+
+- Add these two tags that mentioned bellow and select the newly created Datasource 'FX5U'
+
+  - INT
+  - DINT
+
+- For writing the tag values onto the MQTT databus you need to activate and confirm the 'Publish on the databus' option for each tag. And click Deploy
+
+ ![Deploydatabus](/docs/graphics/Deploydatabus.PNG)
+
+- back on the overview page 'Available connectors', the status of the MELSEC Connector should be shown as **connected**
+
+ ![IIHoverview](/docs/graphics/IIHoverview.PNG)
+
+Now data can be transferred via the MELSEC connection. Please find more information in the  [Usage](/docs/Usage.md) documentation.
 
