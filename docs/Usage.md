@@ -20,9 +20,9 @@ To print out the MELSEC Connector metadata, follow these steps:
 - create a debug node and connect to the mqtt in node
 - deploy the flow and watch the debug window
 
-![metadata_flow](/docs/graphics/Metadata_Flow.png)
+![metadata_flow](/docs/graphics/Metadatanode.PNG)
 
-![metadataflowcreator](/docs/graphics/metadataflowcreator.PNG)
+![metadataflowcreator](/docs/graphics/metadatamsg.PNG)
 
 Now you can see the configured datapoint according to the MELSEC settings:
 
