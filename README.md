@@ -64,7 +64,7 @@ Here we configure a connection to a Mithsubhusi IQR PLC using the Connector for 
   - Connector for MELSEC V1.0.0-0
   - Flow Creator V1.17.1-1
   - IIH Essentials V2.0.1
-- PLC: Mithsubhusi FX5U
+- PLC: Mithsubhusi IQR
 - GX Works2
 
 ### PLC project
