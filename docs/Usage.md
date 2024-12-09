@@ -41,11 +41,11 @@ To print out the transfered MELSEC Connector data, follow these steps:
 - deploy the flow
 - as soon as the value for a configured tag changes, you can see it in the debug window
 
-![read_data_flow](/docs/graphics/Read_Data_Flow.png)
+![read_data_flow](/docs/graphics/Readdatamqqtin.PNG)
 
 Since the read payload only contains the tag ID and not the tag name, you need to assign the tag ID according to the metadata. Here the parameter ***Data_INT*** (tag ID **1**) is incremented automatically by the PLC, so we can read each single value:
 
-![Datapoints](/docs/graphics/Datapoints.PNG)
+![Datapoints](/docs/graphics/datapintpayload.PNG)
 
 ## Write data
 
