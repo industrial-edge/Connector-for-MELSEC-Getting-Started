@@ -83,11 +83,11 @@ To activate the data transfer from the MELSEC Connector, proceed as following:
 
 - go to tab 'Manage data' and add the asset 'IQR'
 
-![Assetsandstructure](/docs/graphics/Assetsandstructure.PNG)
+![Assetsandstructure](/docs/graphics/AddassetIIHessentials.PNG)
 
 - Add the Attributes that were configured within the MELSEC Connector
   
-![IIHesentialsoverview](/docs/graphics/IIHesentialsoverview.PNG)
+![IIHesentialsoverview](/docs/graphics/Addatributes.PNG)
 
 
 - data is now collected by the IIH Essentials and can be used by further apps
