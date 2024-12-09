@@ -59,9 +59,9 @@ To write some data on the MELSEC tag, you must fetch the tag ID from metadata pa
 - deploy the flow
 - click the inject button, to write the value
 
-![writedata](/docs/graphics/writedata.PNG)
+![writedata](/docs/graphics/writedatamqtti.PNG)
 
-![payload](/docs/graphics/Payloadmsg.png)
+![payload](/docs/graphics/writedatadebug.PNG)
 
 ## Use IIH Essentials
 
