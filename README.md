@@ -24,13 +24,14 @@ This tutorial shows how to use the Industrial Edge applications MELSEC Connector
 * Mithsubhusi L02
 * Mithsubhusi Q00U
 * Mithsubhusi FX3U
+* Mithsubhusi IQR
 
 The MELSEC Connector is an application that runs on the individual IED. Connections can be configured using the Common Configurator for industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
 
 
 ### General Task
 
-Here we configure a connection to a Mithsubhusi FX5U PLC using the Connector for MELSEC. The data is published on the Databus. By using the application Flow Creator, we fetch the metadata of the MELSEC Connector, write some data on the configured tags and the read out the new data.
+Here we configure a connection to a Mithsubhusi IQR PLC using the Connector for MELSEC. The data is published on the Databus. By using the application Flow Creator, we fetch the metadata of the MELSEC Connector, write some data on the configured tags and the read out the new data.
 
 ![Overview](/docs/graphics/Melsecarchi.PNG)
 
