@@ -54,7 +54,7 @@ To write some data on the MELSEC tag, you must fetch the tag ID from metadata pa
 - create an inject node with this JSON payload: `{ "vals": [ { "id": "2", "val": "111" } ] }`
 - create a mqtt out node
 - set the server to 'ie-databus' with port 1883 and corresponding user name/password ('edge'/'edge')
-- set the topic to `ie/d/j/simatic/v1/melsec1/dp/w/IQR`
+- set the topic to `ie/d/j/simatic/v1/melsec1/dp/w/IQR/1000ms`
 - connect the inject node to the mqtt out node
 - deploy the flow
 - click the inject button, to write the value
