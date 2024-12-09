@@ -73,20 +73,20 @@ To activate the data transfer from the MELSEC Connector, proceed as following:
 - open the app IIH Essentials
 - select the settings button and enter the user name and the password for the Databus user 'edge' and 'edge'
 
-![DatabusEIP](/docs/graphics/DatabusEIP.PNG)
+![DatabusEIP](/docs/graphics/IIHessentialsdatabus.PNG)
 
 - go to tab 'Connectors' and select 'MELSEC Connector'
-
-![EIPIIH](/docs/graphics/EIPIIH.PNG)
-
 - activate the adapter and save
 
-![Activateadapter](/docs/graphics/Activateadapter.PNG)
+![EIPIIH](/docs/graphics/Activateadapter.PNG)
 
-- go to tab 'Assets & Connectivity' and add the variables, that were configured within the MELSEC Connector
+
+- go to tab 'Manage data' and add the asset 'IQR'
 
 ![Assetsandstructure](/docs/graphics/Assetsandstructure.PNG)
 
+- Add the Attributes that were configured within the MELSEC Connector
+  
 ![IIHesentialsoverview](/docs/graphics/IIHesentialsoverview.PNG)
 
 
