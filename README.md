@@ -20,18 +20,18 @@
 
 This tutorial shows how to use the Industrial Edge applications MELSEC Connector to establish a connection between an Industrial Edge Device (IED) and a 3rd party PLC that supports **MELSEC**. These PLC variants are supported:
 
-* Mithsubhusi FX5U
-* Mithsubhusi L02
-* Mithsubhusi Q00U
-* Mithsubhusi FX3U
-* Mithsubhusi IQR
+* Mitsubishi FX5U
+* Mitsubishi L02
+* Mitsubishi Q00U
+* Mitsubishi FX3U
+* Mitsubishi IQR
 
 The MELSEC Connector is an application that runs on the individual IED. Connections can be configured using the Common Configurator for industrial Edge. The connector transfers the value series of selected data points from a PLC to the Databus. From there the data can be used within other Edge apps, e.g. the Flow Creator.
 
 
 ### General Task
 
-Here we configure a connection to a Mithsubhusi IQR PLC using the Connector for MELSEC. The data is published on the Databus. By using the application Flow Creator, we fetch the metadata of the MELSEC Connector, write some data on the configured tags and the read out the new data.
+Here we configure a connection to a Mitsubishi IQR PLC using the Connector for MELSEC. The data is published on the Databus. By using the application Flow Creator, we fetch the metadata of the MELSEC Connector, write some data on the configured tags and the read out the new data.
 
 ![Overview](/docs/graphics/Melsecarchi.PNG)
 
@@ -50,7 +50,7 @@ Here we configure a connection to a Mithsubhusi IQR PLC using the Connector for 
 - IED: Installed app IIH Semantics
 - IED: Installed app Flow Creator
 - IED: Installed app IIH Essentials (optional)
-- IED is connected to the Mithsubhusi FX5U PLC via Ethernet
+- IED is connected to the Mitsubishi FX5U PLC via Ethernet
 - GX Works2 project loaded on PLC
 - Google Chrome (Version ≥ 72)
 
@@ -64,7 +64,7 @@ Here we configure a connection to a Mithsubhusi IQR PLC using the Connector for 
   - Connector for MELSEC V1.0.0-0
   - Flow Creator V1.17.1-1
   - IIH Essentials V2.0.1
-- PLC: Mithsubhusi IQR
+- PLC: Mitsubishi IQR
 - GX Works2
 
 ### PLC project
