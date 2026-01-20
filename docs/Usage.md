@@ -85,7 +85,7 @@ To activate the data transfer from the MELSEC Connector, proceed as following:
 
 ![Assetsandstructure](/docs/graphics/AddassetIIHessentials.PNG)
 
-- Add the Attributes that were configured within the MELSEC Connector
+- add the Attributes that were configured within the MELSEC Connector
   
 ![IIHesentialsoverview](/docs/graphics/Addatributes.PNG)
 
