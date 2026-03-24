@@ -45,7 +45,6 @@ Here we configure a connection to a Mitsubishi IQR PLC using the Connector for M
 - IED: Installed system app Databus
 - IED: Installed app Connector for Melsec
 - IED: Installed app Common Configurator
-- IED: Installed app Registry Service
 - IED: Installed app Common Import Converter
 - IED: Installed app IIH Semantics
 - IED: Installed app Flow Creator
@@ -60,7 +59,6 @@ Here we configure a connection to a Mitsubishi IQR PLC using the Connector for M
 - Industrial Edge Device (OS) V2.3.0-13
   - Databus V3.0.1
   - Common Configurator V2.0.1
-  - Registry Service V1.11.0-2
   - Connector for MELSEC V1.0.0-0
   - Flow Creator V1.17.1-1
   - IIH Essentials V2.0.1
